@@ -8,12 +8,12 @@ import Team from "./scenes/team/Team.jsx";
 import Contacts from "./scenes/contacts/Contacts.jsx";
 import Invoices from "./scenes/invoices/Invoices.jsx";
 import Form from "./scenes/form/Form.jsx";
-// import Bar from "./scenes/bar";
+import Calendar from "./scenes/calendar/Calendar.jsx";
+import FAQ from "./scenes/faq/faq.jsx";
+import Bar from "./scenes/bar/Bar.jsx";
 // import Line from "./scenes/line";
 // import Pie from "./scenes/pie";
-// import FAQ from "./scenes/faq";
 // import Geography from "./scenes/geography";
-// import Calendar from "./scenes/calendar";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -32,12 +32,12 @@ function App() {
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
-              {/* <Route path="/bar" element={<Bar />}></Route> */}
+              <Route path="/calendar" element={<Calendar />}></Route>
+              <Route path="/faq" element={<FAQ />}></Route>
+              <Route path="/bar" element={<Bar />}></Route>
               {/* <Route path="/pie" element={<Pie />}></Route> */}
               {/* <Route path="/line" element={<Line />}></Route> */}
-              {/* <Route path="/faq" element={<FAQ />}></Route> */}
               {/* <Route path="/geography" element={<Geography />}></Route> */}
-              {/* <Route path="/calendar" element={<Calendar />}></Route> */}
             </Routes>
           </main>
         </div>
